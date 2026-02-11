@@ -1,25 +1,25 @@
 class Thoughtjack < Formula
   desc "Adversarial MCP server for security testing"
   homepage "https://github.com/thoughtgate/thoughtjack"
-  version "0.4.0"
+  version "0.4.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/thoughtgate/thoughtjack/releases/download/v0.4.0/thoughtjack-aarch64-apple-darwin.tar.xz"
-      sha256 "e9d4d35dad322057fe9beb90ff1cf571ce6d38ec292bc3cb538b3763ae193d47"
+      url "https://github.com/thoughtgate/thoughtjack/releases/download/v0.4.1/thoughtjack-aarch64-apple-darwin.tar.xz"
+      sha256 "1702bfd5bdbe853e4d61035ef7cc9f0654d46c4cd4e8f7fbb67228390e7d5906"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/thoughtgate/thoughtjack/releases/download/v0.4.0/thoughtjack-x86_64-apple-darwin.tar.xz"
-      sha256 "67d1f31cf36164b44ac1f9292edb1242bba1944e8b2bc599870a27ca3a27ad31"
+      url "https://github.com/thoughtgate/thoughtjack/releases/download/v0.4.1/thoughtjack-x86_64-apple-darwin.tar.xz"
+      sha256 "4708994720eb50c530b3cf341796f8384e6fe89641113a67767028a6aaea9dc7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/thoughtgate/thoughtjack/releases/download/v0.4.0/thoughtjack-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "37f164aa65fd3204b0c4618297e375c40fccdfbe5945dc14d387b0015314a8b6"
+      url "https://github.com/thoughtgate/thoughtjack/releases/download/v0.4.1/thoughtjack-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "44621f1664d76c275af0f677235d2e46b0a97cf5d87270b9291448feafa86331"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/thoughtgate/thoughtjack/releases/download/v0.4.0/thoughtjack-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ccad4b0bbefac44060dbf6365436e95580b483c98833ddb2d1945a872632f6cf"
+      url "https://github.com/thoughtgate/thoughtjack/releases/download/v0.4.1/thoughtjack-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "90ace19aeb119cc833370e37c90c39706ac2da1e8c3f76f7f0b29d0685ade60d"
     end
   end
   license "Apache-2.0"
