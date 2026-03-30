@@ -1,25 +1,25 @@
 class Thoughtjack < Formula
-  desc "Adversarial MCP server for security testing"
+  desc "Adversarial agent security testing tool"
   homepage "https://github.com/thoughtgate/thoughtjack"
-  version "0.4.1"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/thoughtgate/thoughtjack/releases/download/v0.4.1/thoughtjack-aarch64-apple-darwin.tar.xz"
-      sha256 "1702bfd5bdbe853e4d61035ef7cc9f0654d46c4cd4e8f7fbb67228390e7d5906"
+      url "https://github.com/thoughtgate/thoughtjack/releases/download/v0.5.0/thoughtjack-aarch64-apple-darwin.tar.xz"
+      sha256 "115b93e1eee17f2ebe412e5f871ec3528a3371b50bc9cafc8f18acc9968f2c11"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/thoughtgate/thoughtjack/releases/download/v0.4.1/thoughtjack-x86_64-apple-darwin.tar.xz"
-      sha256 "4708994720eb50c530b3cf341796f8384e6fe89641113a67767028a6aaea9dc7"
+      url "https://github.com/thoughtgate/thoughtjack/releases/download/v0.5.0/thoughtjack-x86_64-apple-darwin.tar.xz"
+      sha256 "974a73b5a8ade85cd0deb2ee0221d91b3e72a1b4d682f2e9e6796754e113ae7e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/thoughtgate/thoughtjack/releases/download/v0.4.1/thoughtjack-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "44621f1664d76c275af0f677235d2e46b0a97cf5d87270b9291448feafa86331"
+      url "https://github.com/thoughtgate/thoughtjack/releases/download/v0.5.0/thoughtjack-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "cddd9b68c0f4fa124ca27272de171ae67ebe94636f1abfa98ce6e1babff9d72a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/thoughtgate/thoughtjack/releases/download/v0.4.1/thoughtjack-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "90ace19aeb119cc833370e37c90c39706ac2da1e8c3f76f7f0b29d0685ade60d"
+      url "https://github.com/thoughtgate/thoughtjack/releases/download/v0.5.0/thoughtjack-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "3667ead360d61f5c1495a2cd93a469dabe0a179eb134c867cc45f52dbd5871fb"
     end
   end
   license "Apache-2.0"
